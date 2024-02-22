@@ -5,9 +5,8 @@ import {ViewedStatusData} from '../../data';
 
 const ViewStatus = () => {
   const renderItem = ({item}) => {
-    console.log(JSON.stringify(item));
     return (
-      <View style={{paddingVertical: 8, }}>
+      <View style={{paddingVertical: 8}}>
         <View key={item.id} style={styles.innerContianer}>
           <View style={styles.imgStory}>
             <Image source={item.storyImg} style={styles.statusStyle} />
@@ -26,7 +25,7 @@ const ViewStatus = () => {
       <Text style={styles.text}>ViewStatus</Text>
       <FlatList
         data={ViewedStatusData}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={item => item.id.toString()}
         renderItem={renderItem}
       />
     </View>

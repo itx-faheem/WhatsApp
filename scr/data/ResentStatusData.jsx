@@ -9,17 +9,17 @@ export default ResentStatusData = [
     storyMessage: 'Hello world',
   },
   {
-    id: 1,
+    id: 2,
     name: 'Raza Akbar',
     time: 'Today, 6:30 PM',
     storyImg: images.status2,
     storyMessage: 'Hello world',
   },
   {
-    id: 1,
-    name: 'Ali Raza',
+    id: 3,
+    name: 'Anna',
     time: 'Today, 6:30 PM',
-    storyImg: images.status2,
+    storyImg: images.user4,
     storyMessage: 'Hello world',
   },
 ];

@@ -9,12 +9,12 @@ export const TabBarData = [
     name: 'chat',
   },
   {
-    id: 1,
+    id: 2,
     route: StatusListScreen,
     name: 'Status',
   },
   {
-    id: 1,
+    id: 3,
     route: CallListScreen,
     name: 'call',
   },
