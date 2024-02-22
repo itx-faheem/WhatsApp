@@ -33,7 +33,7 @@ const ResentStatus = ({onPress}) => {
         </View>
       </TouchableOpacity>
       <FulModal
-        showModal={showModal[item.id]}
+        showModal={showModal[item.id] || false}
         item={item}
         setshowModal={value =>
           setshowModal(prev => ({...prev, [item.id]: value}))

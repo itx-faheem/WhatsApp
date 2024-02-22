@@ -3,12 +3,20 @@ import React from 'react';
 import {ChatList} from '../components';
 import MessageIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {COLORS} from '../theme';
+import {useNavigation} from '@react-navigation/native';
 
 const ChatListScreen = () => {
+  const navigation = useNavigation();
+  const OnNavigate = () => {
+    navigation.navigate('ContactScreen');
+  };
   return (
     <View style={styles.constiner}>
       <ChatList />
-      <TouchableOpacity style={styles.iconCOntainer} activeOpacity={0.5}>
+      <TouchableOpacity
+        onPress={OnNavigate}
+        style={styles.iconCOntainer}
+        activeOpacity={0.5}>
         <MessageIcon size={22} color={COLORS.white} name="message-text" />
       </TouchableOpacity>
     </View>
